@@ -32,3 +32,6 @@ var p2 = "#9c27b0";
 var p3 = "#7b1fa2";
 var w = "white";
 var bl = "black";
+var g1 = "#e0e0e0";
+var g2 = "#9e9e9e";
+var g3 = "#616161";
