@@ -1,4 +1,4 @@
-var canvas = document.getElementById("canvas");
+var canvas = document.querySelector("#canvas");
 var width, height, hWidth, hHeight;
 var ctx = canvas.getContext("2d");
 
@@ -10,6 +10,13 @@ function updateDim(w, h) {
   hHeight = height / 2;
 }
 updateDim(canvas.width, canvas.height);
+
+var resetFlag = false;
+// use this to restart animation; triggered by button
+document.querySelector("#restart").addEventListener("click", () => {
+  resetFlag = true;
+  reset();
+});
 
 // colors from https://material.io/guidelines/style/color.html#color-color-palette
 var r1 = "#e57373";
